@@ -20,6 +20,7 @@ body,
   justify-content:space-between;
   flex:1;
   z-index: 1;
+  font-family: 'Roboto', sans-serif;
 
 }
 body, input, button{

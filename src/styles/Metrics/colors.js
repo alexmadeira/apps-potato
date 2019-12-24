@@ -9,7 +9,7 @@ const Colors = {
   TextColor: {
     Dark: '#554F49',
     Light: '#FFFFFF',
-    highlighted: '#EAC591',
+    Highlighted: '#EAC591',
   },
   Backgrounds: {
     Banner: '#C2AA94',

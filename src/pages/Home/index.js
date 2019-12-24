@@ -1,7 +1,15 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Banner from '~/components/Banner';
+import Header from '~/components/Header';
+
+import { Container } from './styles';
 
 export default function Home() {
-  return <div />;
+  return (
+    <Container>
+      <Header />
+      <Banner />
+    </Container>
+  );
 }

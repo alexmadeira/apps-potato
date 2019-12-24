@@ -1,8 +1,9 @@
 const Fonts = {
   sizes: {
-    Small: '16px',
-    Middle: '2wpx',
+    Small: '18px',
+    Middle: '22px',
     Bigger: '40px',
+    Logo: '30px',
   },
   family: {},
 };
