@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Parallax } from 'react-scroll-parallax';
 
-import { Colors, Fonts, Spaces } from '~/styles/Metrics';
+import { Colors, Fonts, Spaces, Breakpoints } from '~/styles/Metrics';
 
 export const Container = styled.div`
   background: ${Colors.Backgrounds.Destaque};
@@ -42,6 +42,7 @@ export const Title = styled.h2`
 export const Description = styled.p`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Middle};
+  margin: 0 calc(${Spaces.BaseMargin} * 2);
   font-weight: 100;
 `;
 
@@ -52,6 +53,10 @@ export const InformationBox = styled.div`
   height: 100%;
   margin-top: calc(${Spaces.BaseMargin} * 3);
   flex-direction: column;
+  ${Breakpoints.sm} {
+    margin-top: 0;
+    justify-content: center;
+  }
 `;
 
 export const InformationPotato = styled.img`
@@ -88,6 +93,9 @@ export const PotatoBag = styled.div`
   bottom: -400px;
   justify-content: space-between;
   align-items: flex-end;
+  ${Breakpoints.sm} {
+    display: none;
+  }
 `;
 export const ParallaxBox = styled(Parallax)`
   ${props => props.styles || ''}

@@ -2,13 +2,14 @@ import React from 'react';
 
 import LogoSvg from '~/assets/logo.svg';
 
-import { Container, Logo, Nav, NavItem } from './styles';
+import { Container, Logo, Hamburguer, Nav, NavItem } from './styles';
 
 export default function Header() {
   return (
     <Container>
-      <Logo href="/">
+      <Logo>
         <img src={LogoSvg} alt="Potato" /> Potato
+        <Hamburguer />
       </Logo>
       <Nav>
         <NavItem>
@@ -20,10 +21,8 @@ export default function Header() {
         <NavItem>
           <a href="/#">Características</a>
         </NavItem>
-        <NavItem>
-          <a href="/#" className="button">
-            Comprar
-          </a>
+        <NavItem className="button">
+          <a href="/#">Comprar</a>
         </NavItem>
       </Nav>
     </Container>

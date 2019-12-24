@@ -51,6 +51,7 @@ export const Description = styled.p`
   color: ${Colors.TextColor.Dark};
   font-size: ${Fonts.sizes.Middle};
   font-weight: 100;
+  margin: 0 calc(${Spaces.BaseMargin} * 2);
 `;
 
 export const Separator = styled.div`

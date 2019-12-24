@@ -41,6 +41,6 @@ export const Description = styled.p`
 `;
 
 export const Potato = styled.img`
-  width: 35vw;
+  max-width: 50vw;
   margin-top: calc(${Spaces.BaseMargin} * 2);
 `;

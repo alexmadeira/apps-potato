@@ -18,8 +18,13 @@ export const Container = styled.nav`
   ${Breakpoints.xl} {
     max-width: 1200px;
   }
+  ${Breakpoints.sm} {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 `;
-export const Logo = styled.a`
+export const Logo = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,29 +37,70 @@ export const Logo = styled.a`
     margin-right: ${Spaces.BaseMargin};
   }
 `;
+export const Hamburguer = styled.div`
+  border-top: 3px solid ${Colors.TextColor.Light};
+  position: relative;
+  width: 20px;
+  height: 3px;
+  margin-left: ${Spaces.BaseMargin};
+  display: none;
+  ${Breakpoints.sm} {
+    display: flex;
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    border-top: 3px solid ${Colors.TextColor.Light};
+    position: absolute;
+    top: -10px;
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    border-top: 3px solid ${Colors.TextColor.Light};
+    position: absolute;
+    bottom: -7px;
+  }
+`;
+
 export const Nav = styled.ul`
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  ${Breakpoints.sm} {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 70px;
+  }
 `;
 export const NavItem = styled.li`
   margin: 0 ${Spaces.BaseMargin};
+  ${Breakpoints.sm} {
+    margin: calc(${Spaces.BaseMargin} / 3) 0;
+  }
+  &.button {
+    ${Breakpoints.sm} {
+      margin: calc(${Spaces.BaseMargin}) 0;
+    }
+    a {
+      border: 1px solid ${Colors.TextColor.Light};
+      border-radius: 30px;
+      padding: ${Spaces.BasePadding} calc(${Spaces.BasePadding} * 2);
+
+      &:hover {
+        background: ${Colors.TextColor.Highlighted};
+        border-color: ${Colors.TextColor.Dark};
+      }
+    }
+  }
   a {
     color: ${Colors.TextColor.Light};
     text-transform: uppercase;
     font-size: ${Fonts.sizes.Small};
     &:hover {
       border-bottom: 1px solid ${Colors.TextColor.Light};
-    }
-    &.button {
-      border: 1px solid ${Colors.TextColor.Light};
-      border-radius: 30px;
-      padding: ${Spaces.BasePadding} calc(${Spaces.BasePadding} * 2);
-      &:hover {
-        background: ${Colors.TextColor.Highlighted};
-        border-color: ${Colors.TextColor.Dark};
-      }
     }
   }
 `;
