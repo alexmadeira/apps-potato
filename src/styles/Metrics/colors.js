@@ -12,6 +12,7 @@ const Colors = {
     Highlighted: '#EAC591',
   },
   Backgrounds: {
+    Light: '#F1F1F1',
     Banner: '#C2AA94',
     Destaque: '#83aa73',
     Clean: '#f0e0b7',

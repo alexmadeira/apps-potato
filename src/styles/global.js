@@ -21,6 +21,7 @@ body,
   flex:1;
   z-index: 1;
   font-family: 'Roboto', sans-serif;
+  height:500vh;
 
 }
 body, input, button{
