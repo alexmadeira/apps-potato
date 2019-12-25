@@ -19,7 +19,7 @@ export default function Information() {
   return (
     <Container>
       <Title>
-        <strong>Potato</strong> é saldável
+        <strong>Potato</strong> é saudável
       </Title>
       <Description>
         Sim, ela é! A maioria dos carboidratos das batatas são carboidratos
