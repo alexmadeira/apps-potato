@@ -21,6 +21,7 @@ export default function Sizes() {
         <ParallaxBox
           y={[-100, 50]}
           tagOuter="figure"
+          className="hiddenMobile"
           styles={{ left: 0, top: 0, width: '300px' }}
         >
           <ParallaxImage src={potatoImages.batata_04} alt="" />

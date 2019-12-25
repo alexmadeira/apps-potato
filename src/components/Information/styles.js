@@ -36,13 +36,14 @@ export const Title = styled.h2`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Bigger};
   font-weight: 100;
-  margin: calc(${Spaces.BaseMargin} * 7) 0 ${Spaces.BaseMargin} 0;
+  margin: calc(${Spaces.BaseMargin} * 7) ${Spaces.BaseMargin}
+    ${Spaces.BaseMargin} ${Spaces.BaseMargin};
 `;
 
 export const Description = styled.p`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Middle};
-  margin: 0 calc(${Spaces.BaseMargin} * 2);
+  margin: 0 ${Spaces.BaseMargin};
   font-weight: 100;
 `;
 
@@ -61,12 +62,16 @@ export const InformationBox = styled.div`
 
 export const InformationPotato = styled.img`
   width: 30vw;
+  ${Breakpoints.sm} {
+    width: 50vw;
+  }
 `;
 
 export const InformationValuesBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const InformationText = styled.p`
@@ -77,7 +82,8 @@ export const InformationText = styled.p`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Middle};
   font-weight: 100;
-  margin: 0 calc(${Spaces.BaseMargin} * 2);
+  margin: 0 calc(${Spaces.BaseMargin} * 2) calc(${Spaces.BaseMargin} * 2)
+    calc(${Spaces.BaseMargin} * 2);
   strong {
     font-weight: 100;
     font-size: ${Fonts.sizes.Bigger};

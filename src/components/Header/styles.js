@@ -31,10 +31,12 @@ export const Logo = styled.div`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Logo};
   font-weight: bold;
-
   img {
     height: 50px;
     margin-right: ${Spaces.BaseMargin};
+  }
+  ${Breakpoints.sm} {
+    width: 100%;
   }
 `;
 export const Hamburguer = styled.div`
@@ -42,8 +44,9 @@ export const Hamburguer = styled.div`
   position: relative;
   width: 20px;
   height: 3px;
-  margin-left: ${Spaces.BaseMargin};
+  margin-left: auto;
   display: none;
+  justify-self: flex-end;
   ${Breakpoints.sm} {
     display: flex;
   }
@@ -69,10 +72,16 @@ export const Nav = styled.ul`
   align-items: center;
   list-style: none;
   ${Breakpoints.sm} {
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
+    justify-self: flex-end;
+    margin-left: auto;
     flex-direction: column;
-    margin-left: 70px;
+
+    display: none;
+    &.open {
+      display: flex;
+    }
   }
 `;
 export const NavItem = styled.li`

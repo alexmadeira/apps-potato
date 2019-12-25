@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Parallax } from 'react-scroll-parallax';
 
-import { Colors, Fonts, Spaces } from '~/styles/Metrics';
+import { Colors, Fonts, Spaces, Breakpoints } from '~/styles/Metrics';
 
 export const Container = styled.div`
   background: ${Colors.Backgrounds.Light};
@@ -33,7 +33,13 @@ export const Container = styled.div`
 `;
 export const ParallaxBox = styled(Parallax)`
   position: absolute;
+
   z-index: 10;
+  ${Breakpoints.sm} {
+    &.hiddenMobile {
+      display: none;
+    }
+  }
   ${props => props.styles || ''}
 `;
 export const ParallaxImage = styled.img`
@@ -44,14 +50,15 @@ export const Title = styled.h2`
   color: ${Colors.TextColor.Dark};
   font-size: ${Fonts.sizes.Bigger};
   font-weight: 100;
-  margin: calc(${Spaces.BaseMargin} * 7) 0 ${Spaces.BaseMargin} 0;
+  margin: calc(${Spaces.BaseMargin} * 7) ${Spaces.BaseMargin}
+    ${Spaces.BaseMargin} ${Spaces.BaseMargin};
 `;
 
 export const Description = styled.p`
   color: ${Colors.TextColor.Dark};
   font-size: ${Fonts.sizes.Middle};
   font-weight: 100;
-  margin: 0 calc(${Spaces.BaseMargin} * 2);
+  margin: 0 ${Spaces.BaseMargin};
 `;
 
 export const Separator = styled.div`
@@ -74,6 +81,12 @@ export const Separator = styled.div`
     background: ${Colors.Backgrounds.Light};
     z-index: 1;
     padding: 0 calc(${Spaces.BasePadding} * 5);
+    ${Breakpoints.sm} {
+      padding: 0 calc(${Spaces.BasePadding} * 3);
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
   }
 `;
 

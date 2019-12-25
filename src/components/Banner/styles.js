@@ -33,11 +33,14 @@ export const Container = styled.div`
 export const Title = styled.h1`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Bigger};
+  margin: calc(${Spaces.BaseMargin} * 7) ${Spaces.BaseMargin}
+    ${Spaces.BaseMargin} ${Spaces.BaseMargin};
 `;
 
 export const Description = styled.p`
   color: ${Colors.TextColor.Light};
   font-size: ${Fonts.sizes.Middle};
+  margin: 0 ${Spaces.BaseMargin};
 `;
 
 export const Potato = styled.img`

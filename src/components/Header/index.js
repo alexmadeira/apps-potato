@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import LogoSvg from '~/assets/logo.svg';
 
 import { Container, Logo, Hamburguer, Nav, NavItem } from './styles';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Container>
-      <Logo>
+      <Logo onClick={() => setMenuOpen(!menuOpen)}>
         <img src={LogoSvg} alt="Potato" /> Potato
         <Hamburguer />
       </Logo>
-      <Nav>
+      <Nav className={menuOpen && 'open'}>
         <NavItem>
           <a href="/#">Sobre</a>
         </NavItem>
