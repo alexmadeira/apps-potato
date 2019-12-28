@@ -33,14 +33,12 @@ export const Container = styled.div`
 `;
 export const ParallaxBox = styled(Parallax)`
   position: absolute;
-
   z-index: 10;
+  ${props => props.styles.default || ''}
+  padding: 10px;
   ${Breakpoints.sm} {
-    &.hiddenMobile {
-      display: none;
-    }
+    ${props => props.styles.sm || ''}
   }
-  ${props => props.styles || ''}
 `;
 export const ParallaxImage = styled.img`
   width: 100%;
@@ -94,5 +92,8 @@ export const Spotligth = styled.div`
   margin-top: calc(${Spaces.BaseMargin} * 4);
   img {
     max-width: 40vw;
+    ${Breakpoints.sm} {
+      max-width: 70vw;
+    }
   }
 `;

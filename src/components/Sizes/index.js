@@ -21,8 +21,14 @@ export default function Sizes() {
         <ParallaxBox
           y={[-100, 50]}
           tagOuter="figure"
-          className="hiddenMobile"
-          styles={{ left: 0, top: 0, width: '300px' }}
+          styles={{
+            default: { left: 0, top: 0, width: '300px' },
+            sm: {
+              left: '-50px',
+              top: '-90px',
+              width: '190px',
+            },
+          }}
         >
           <ParallaxImage src={potatoImages.batata_04} alt="" />
         </ParallaxBox>
@@ -30,18 +36,24 @@ export default function Sizes() {
           x={[-10, 20]}
           tagOuter="figure"
           styles={{
-            right: '-200px',
-            bottom: '-100px',
-            width: '500px',
-            transform: 'rotate(90deg)',
+            default: {
+              right: '-200px',
+              bottom: '-100px',
+              width: '500px',
+              transform: 'rotate(90deg)',
+            },
+            sm: { right: '-110px', bottom: '-100px', width: '200px' },
           }}
         >
           <ParallaxImage src={potatoImages.batata_03} alt="" />
         </ParallaxBox>
         <ParallaxBox
-          y={[-100, 10]}
+          y={[-10, 50]}
           tagOuter="figure"
-          styles={{ left: '10vw', bottom: 0, width: '150px' }}
+          styles={{
+            default: { left: '-100px', bottom: '-175px', width: '350px' },
+            sm: { left: '-50px', bottom: '-100px', width: '180px' },
+          }}
         >
           <ParallaxImage src={potatoImages.batata_03} alt="" />
         </ParallaxBox>
