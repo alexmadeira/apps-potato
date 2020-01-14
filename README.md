@@ -60,6 +60,7 @@ Não há rotina de deploy, utilizo a ferramenta [netlify]("https://www.netlify.c
 
 ## Licença
 
-Sinta-se a vontade para olhar, baixar, copiar, não tem problema :)\
+Sinta-se a vontade para olhar, baixar, copiar, não tem problema :)
+
 MIT license.
 
