@@ -1,4 +1,12 @@
-# Potato [![Netlify Status](https://api.netlify.com/api/v1/badges/7f66046c-2026-445f-afcd-85d658fef712/deploy-status)](https://app.netlify.com/sites/eager-rosalind-8eb5d6/deploys)
+# Potato 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f66046c-2026-445f-afcd-85d658fef712/deploy-status)](https://app.netlify.com/sites/eager-rosalind-8eb5d6/deploys)
+
+![License MIT](https://img.shields.io/badge/license-MIT-green)
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![js-airbnb-style](https://img.shields.io/badge/code%20style-airbnb-ff69b4.svg)](https://github.com/airbnb/javascript)
+
+[![Made By Alex Madeira](https://img.shields.io/badge/%20made%20by-Alex%20Madeira-blue)](https://www.alexmadeira.com.br/)
 
 Um projeto que desenvolvi para passar o tempo e me divertir.
 
@@ -52,4 +60,6 @@ Não há rotina de deploy, utilizo a ferramenta [netlify]("https://www.netlify.c
 
 ## Licença
 
-Esse projeto não tem Licença mas sinta-se a vontade para olhar baixar copiar não tem problema :)
+Sinta-se a vontade para olhar, baixar, copiar, não tem problema :)\
+MIT license.
+
