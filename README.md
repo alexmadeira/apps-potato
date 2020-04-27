@@ -12,7 +12,7 @@ Um projeto que desenvolvi para passar o tempo e me divertir.
 
 ## Preview
 
-[![Potato - Alex Madeira](http://potato.alexmadeira.com.br/preview.png)](http://potato.alexmadeira.com.br/)
+[![Batata - Alex Madeira](http://batata.alexmadeira.com.br/preview.png)](http://batata.alexmadeira.com.br/)
 
 ## Começando
 
